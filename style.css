@@ -1,0 +1,173 @@
+*{
+	margin: 0;padding: 0;box-sizing: border-box;
+}
+a{
+	color: white;
+	text-decoration: none;
+}
+header
+{
+	width: 100%;
+	height: 100vh;
+	background-color:1a52f9;
+	background-image: linear-gradient(19deg,#1a52f9 0%,#B721FF 84%);
+	position: relative;
+
+}
+header:before{
+	content: "";
+	width: 370px;
+	height:420px;
+	position: absolute;
+	left: 0px;
+	bottom: 60px;
+background-image: url('datas/bike.jpg');
+background-size: 100% 100%;
+border-radius: 300px;
+}
+nav
+{
+	width: 100%;
+	height: 15vh;
+	display: flex;
+	justify-content:space-around;
+	align-items: center;
+	position:absolute;
+
+}
+.logo a{
+	font-size: 1.6rem;
+	text-transform:uppercase ;
+}
+.menu ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 0 15px;
+}
+.menu ul li a{
+	text-transform: capitalize;
+}
+.active,ul li:hover{
+	border-top: 2px solid #5dade2;
+	border-bottom:2px solid #5dade2 ;
+}
+.contact_btn{
+	background-color: #d465ef;
+	padding: 12 px 26px;
+	font-style: 14px;
+	font-weight: 500;
+	border: 1px solid transparent;
+	text-transform: capitalize;
+	border-radius: 10px;
+}
+.contact_btn:hover{
+	background:linear-gradient(to bottom,#615cfd 0%,#d465ef 100%);
+	border-radius: 10px;
+}
+.center_content{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.center_content h1{
+	font-size: 70px;
+	text-transform: capitalize;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+.center_content h2{
+	font-size: 25px;
+	font-weight: 400;
+	text-align: center;
+	text-transform: capitalize;
+}
+.contact_page{
+margin-left: 400px;
+margin-top: 200px;
+	padding: 50px;
+	width: 400px;
+	height: 200px;
+	background-image: linear-gradient(19deg,#1a52f9 0%,#B721FF 84%);
+}
+.center_content h2:before
+{
+	content:"" ;
+	width: 80px;
+	height: aoto;
+	border: 2px solid red;
+	position: absolute;
+	left: 80px;
+	bottom: 10px;
+	
+}
+.social_network
+{
+	width: 100px;
+	height:auto;
+	position:absolute;
+	right:0;
+	top:40%;
+}
+.fa_icons
+{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background:linear-gradient(19deg,#1a52f9 0%,#B721FF 84%); 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.fa_icons:nth-child(even)
+{
+margin: 20px 0;
+}
+.fa_icons:hover{
+	background:linear-gradient(19deg,#B721FF 0%,#1a52f9 84%);  
+
+}
+.gallery
+{width: 100%;
+	height: 100vh;
+	
+	background-image: linear-gradient(19deg,#1a52f9 0%,#B721FF 84%);
+}
+.about{
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(19deg,#1a52f9 0%,#B721FF 84%);
+}
+.port
+{
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(19deg,#1a52f9 0%,#B721FF 84%);
+}
+.service
+{
+	width: 100%;
+	height: 100vh;
+	background: linear-gradient(19deg,#1a52f9 0%,#B721FF 84%);
+}
+.center_content.airplane
+{
+	height: 200px;
+	width: 500px;
+	bottom: 120px;
+	right: -450px;
+	position: absolute;
+	animation: plane 4s linear infinite;
+	transform-origin: 100% 50%;
+}
+@keyframes plane{
+	0%{
+		transform: translatex(0px)translateY(0px)rotate(0deg);
+	}
+	30%{
+		transform: translatex(-500px)translateY(0px)rotate(0deg);
+	}
+	100%{
+		transform: translatex(-1900px)translateY(-200px)rotate(20deg);
+	}

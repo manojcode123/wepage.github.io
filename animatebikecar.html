@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		
+	</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+
+		}
+		.bg{
+			padding: 0;
+			height: 100vh;
+			background-image: url(datas/bg.jpg);
+			background-repeat:repeat-x;
+			position: relative;
+			animation: aswmbg 5s infinite linear;
+
+
+		}
+		@keyframes aswmbg
+		{
+			from{background-position: bottom right;}
+			to{background-position: bottom left;}
+		}
+		.bike
+		{
+			position: absolute;left: 750px;
+			bottom: 135px;
+			width: 130px;
+		}
+		.car
+		{
+			position: absolute;left: 100px;
+			bottom: 30px;
+			width: 450px;
+			height: 150px;
+		}
+	</style>
+</head>
+<body>
+	<div class="bg">
+		<img src="datas/pizzabike.png"class="bike">
+		<img src="datas/car.png"class="car">
+	</div>
+</body>
+</html>
